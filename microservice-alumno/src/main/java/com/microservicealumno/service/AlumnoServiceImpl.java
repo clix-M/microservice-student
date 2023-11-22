@@ -19,4 +19,9 @@ public class AlumnoServiceImpl implements AlumnoService{
     public Alumno findAlumnoById(String id) {
         return alumnoRepo.findById(id).orElseThrow(()->new RuntimeException("Alumno no encontrado"));
     }
+
+    @Override
+    public Alumno save(Alumno alumno) {
+         return alumnoRepo.save(alumno);
+    }
 }

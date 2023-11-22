@@ -37,6 +37,7 @@ public class NotaController {
 
         List<Nota> notas = service.findAll();
         List<Map<String, Object>> notasConMensaje = new ArrayList<>();
+
         for (Nota nota : notas) {
             Map<String, Object> notaMap = new HashMap<>();
             notaMap.put("alumno", nota.getAlumno());

@@ -7,4 +7,6 @@ import java.util.List;
 public interface AlumnoService {
      List<Alumno> All();
      Alumno findAlumnoById(String id);
+
+    Alumno save(Alumno alumno);
 }
